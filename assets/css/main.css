@@ -1631,6 +1631,12 @@ input, select, textarea {
 			}
 		}
 
+		@media screen and (max-width: 700px) {
+			.statistics li {
+				max-width: 100%;
+			}
+		}
+
 		@media screen and (max-width: 480px) {
 
 			.statistics {
@@ -2428,6 +2434,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+
+			.statistics {
+				
+			}
 
 			.icon.major {
 				margin: 0 0 1.5em 0;
