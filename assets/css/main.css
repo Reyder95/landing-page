@@ -206,6 +206,10 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	.statistics {
+		overflow: hidden; height: 220px;
+	}
+
 	p {
 		margin: 0 0 2em 0;
 	}
@@ -358,6 +362,10 @@ input, select, textarea {
 
 	hr {
 		border-bottom-color: rgba(255, 255, 255, 0.35);
+	}
+
+	.test {
+		border: none; overflow: hidden; height: 600px !important;
 	}
 
 /* Row */
@@ -849,6 +857,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
+
+			.test {
+				border: none; overflow: hidden; height: 300px !important;
+			}
 
 			.row {
 				display: flex;
@@ -1583,7 +1595,48 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 882px) {
+			.test {
+				border: none; overflow: hidden; height: 150px !important;
+			}
+		}
+
+		@media screen and (max-width: 820px) {
+			.statistics {
+				overflow: visible !important;
+			}
+
+			.statistics li {
+				max-width: 20%;
+			}
+
+			.project-element {
+				flex-direction: column;
+				flex-flow: column-reverse !important;
+				width: 100%;
+			}
+
+			.project-element-item {
+				width: 100%;
+			}
+
+			.project-image div {
+				text-align: center;
+			}
+
+			.project-image img {
+				width: 100%;
+				height: auto;
+				margin-bottom: 30px;
+			}
+		}
+
 		@media screen and (max-width: 480px) {
+
+			.statistics {
+				overflow: visible !important;
+				height: auto;
+			}
 
 			.row {
 				display: flex;
@@ -2353,6 +2406,25 @@ input, select, textarea {
 				font-size: 4.75rem;
 			}
 
+			.project-element {
+				flex-direction: column;
+				width: 100%;
+			}
+
+			.project-element-item {
+				width: 100%;
+			}
+
+			.project-image div {
+				text-align: center;
+			}
+
+			.project-image img {
+				width: 100%;
+				height: auto;
+				margin-bottom: 30px;
+			}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -2390,6 +2462,25 @@ input, select, textarea {
 		}
 
 /* Image */
+
+	.profile-image {
+		width: 350px;
+		height: 350px;
+		border-radius: 50%;
+		background-color: black;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.profile-image img {
+		border-radius: 50%;
+		object-fit: contain;
+		position: absolute;
+		top:65%;
+		left: 53%;
+		transform: translate(-50%, -50%);
+		width: 110%;
+	}
 
 	.image {
 		border-radius: 8px;
@@ -2592,6 +2683,12 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 480px) {
+
+			.profile-image {
+				width: 200px;
+				height: 200px;
+				margin-bottom: 25px;
+			}
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
